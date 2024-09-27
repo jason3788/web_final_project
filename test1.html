@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>個人網站</title>
+  <link rel="stylesheet" href="test1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body id="top">
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#top"  onclick="smoothScroll(event, 'top')"><img src="go-top.png"></a></li>
+        <li class="text-li"><a href="#personal-intro"  onclick="smoothScroll(event, 'personal-intro')">Personal</a></li>
+        <li class="text-li dropdown">
+          <a>Games</a>
+          <ul class="dropdown-menu menu1">
+            <li><i class="fa-sharp fa-solid fa-right-long" style="color: #e9ed02;"></i><a href="#game1" onclick="smoothScroll(event, 'game1')">LOL</a></li>
+            <li><i class="fa-sharp fa-solid fa-right-long" style="color: #e9ed02;"></i><a href="#game2" onclick="smoothScroll(event, 'game2')">Apex</a></li>
+          </ul>
+        </li>
+        <li class="text-li dropdown">
+          <a>NBA Players</a>
+          <ul class="dropdown-menu menu2">
+            <li><i class="fa-sharp fa-solid fa-right-long" style="color: #e9ed02;"></i><a href="#player1"  onclick="smoothScroll(event, 'player1')">Durant</a></li>
+            <li><i class="fa-sharp fa-solid fa-right-long" style="color: #e9ed02;"></i><a href="#player2"  onclick="smoothScroll(event, 'player2')">Curry</a></li>
+          </ul>
+        </li>
+        <li class="text-li dropdown">
+          <a>Songs</a>
+          <ul class="dropdown-menu menu3">
+            <li><i class="fa-sharp fa-solid fa-right-long" style="color: #e9ed02;"></i><a href="#song1"  onclick="smoothScroll(event, 'song1')">Song 1</a></li>
+            <li><i class="fa-sharp fa-solid fa-right-long" style="color: #e9ed02;"></i><a href="#song2"  onclick="smoothScroll(event, 'song2')">Song 2</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="toggleButton" onclick="toggleHeader()">
+    <img src="up-arrow.jpg" alt="Toggle Header">
+  </div>
+
+  <main>
+    <section class="section-intro">
+      <div class="intro-content">
+        <h2>Welcome to my Website !</h2>
+        <h3>JASON HUNG</h3>
+        <ul class="social-media">
+          <li><a href="https://www.facebook.com/profile.php?id=100002839379120" target="_blank"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="https://discord.gg/x2N58RN9" target="_blank"><i class="fab fa-discord"></i></a></li>
+          <li><a href="https://www.instagram.com/jason911025123/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <div id="personal-intro" class="personal">
+      <h2>Personal-information</h2>
+      <table>
+        <caption>課表模擬</caption>
+        <tr>
+            <th></th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+        <tr>
+            <th>第一節</th>
+            <td id="1-1"></td>
+            <td id="2-1"></td>
+            <td id="3-1"></td>
+            <td id="4-1"></td>
+            <td id="5-1"></td>
+        </tr>
+        <tr>
+            <th>第二節</th>
+            <td id="1-2">計算機組織</td>
+            <td id="2-2"></td>
+            <td id="3-2">計算機組織</td>
+            <td id="4-2">演算法</td>
+            <td id="5-2">資料庫</td>
+        </tr>
+        <tr>
+            <th>第三節</th>
+            <td id="1-3">線性代數</td>
+            <td id="2-3">體育</td>
+            <td id="3-3">計算機組織</td>
+            <td id="4-3">演算法</td>
+            <td id="5-3">資料庫</td>
+        </tr>
+        <tr>
+            <th>第四節</th>
+            <td id="1-4">線性代數</td>
+            <td id="2-4">體育</td>
+            <td id="3-4">計算機組織</td>
+            <td id="4-4">線性代數</td>
+            <td id="5-4">資料庫</td>
+        </tr>
+        <tr>
+            <th>第五節</th>
+            <td id="1-5"></td>
+            <td id="2-5">應用經濟學</td>
+            <td id="3-5"></td>
+            <td id="4-5">線性代數</td>
+            <td id="5-5"></td>
+        </tr>
+        <tr>
+          <th>第六節</th>
+          <td id="1-5">工程數學</td>
+          <td id="2-5">應用經濟學</td>
+          <td id="3-5">資料庫</td>
+          <td id="4-5">OFFICE證照實務</td>
+          <td id="5-5">英文</td>
+        </tr>
+        <tr>
+          <th>第七節</th>
+          <td id="1-5">工程數學</td>
+          <td id="2-5">工程數學</td>
+          <td id="3-5"></td>
+          <td id="4-5">OFFICE證照實務</td>
+          <td id="5-5">英文</td>
+        </tr>
+        <tr>
+          <th>第八節</th>
+          <td id="1-5">演算法</td>
+          <td id="2-5"></td>
+          <td id="3-5">資訊系統實驗</td>
+          <td id="4-5"></td>
+          <td id="5-5"></td>
+        </tr>
+        <tr>
+          <th>第九節</th>
+          <td id="1-5">演算法</td>
+          <td id="2-5"></td>
+          <td id="3-5">資訊系統實驗</td>
+          <td id="4-5"></td>
+          <td id="5-5"></td>
+        </tr>
+        <tr>
+          <th>第十節</th>
+          <td id="1-5"></td>
+          <td id="2-5"></td>
+          <td id="3-5">資訊系統實驗</td>
+          <td id="4-5"></td>
+          <td id="5-5"></td>
+        </tr>
+        <tr>
+            <th>課程數量</th>
+            <td id="total-1" colspan="5"></td>
+        </tr>
+    </table>
+
+    <div class="popup" style="display: none;">
+      <p>正在修改星期 <span id="current-day"></span> 第 <span id="current-lesson"></span> 節課</p>
+      <label>
+          <input type="radio" name="action" value="change" checked> Change
+      </label>
+      <label>
+          <input type="radio" name="action" value="delete"> Delete
+      </label>
+      <br>
+      <input type="text" id="course-input">
+      <button onclick="confirmAction()">OK</button>
+      <button onclick="cancelAction()">Cancel</button>
+      <button onclick="clearTable()">Clear Table</button>
+    </div>
+
+
+    <div id="intro-pane">
+      <h2>自我簡介</h2>
+      <p>歡迎來到我的網頁！這是我第一次製作和自己相關的網頁，希望大家能藉由此網頁讓大家更了解我。</p>
+      <button id="show-more-btn">顯示更多</button>
+      <ul id="more-info" style="display: none;">
+        <li><strong>姓名：</strong>洪碩廷</li>
+        <li><strong>學校：</strong>淡江大學</li>
+        <li><strong>學系：</strong>資訊工程學系</li>
+        <li><strong>興趣：</strong>打遊戲、看球賽</li>
+        <li><strong>星座：</strong>天蠍座</li>
+      </ul>
+    </div>
+    
+
+    </div>
+    <div class="main_place">
+      <div class="table-container">
+        <table>
+          <tr class="table1">
+            <td colspan="2"><h2 id="game1">My Favorite Games</h2></td>
+          </tr>
+          <tr class="table2">
+            <td class="goleft">
+              <div class="container">
+                <select class="dropdown2" onchange="selectGroup(this.value)">
+                  <option value="0">線路簡介</option>
+                  <option value="1">地圖介紹</option>
+                  <option value="2">裝備介紹</option>
+                </select>
+                  <img class="image" src="allchamp.jpg" alt="">
+                  <p class="intro-text"></p>
+                </div>
+                <button class="button previous-button" onclick="previousContent()">上一張</button>
+                <button class="button pause-button" onclick="togglePause()">暫停</button>
+                <button class="button next-button" onclick="nextContent()">下一張</button>
+              </div>
+            </td>
+            <td>
+              <div class="game" id="game1-container">
+                <img src="game1.jpg" alt="Game 1">
+                <h3>League of Legends</h3>
+                <p>《英雄聯盟》（英語：League of Legends，簡稱LoL）是由拳頭遊戲開發及發行的一款5v5多人線上戰鬥技術型（MOBA）遊戲，遊戲為免費模式進行並提供付費道具服務。該遊戲是受到《魔獸爭霸III：寒冰霸權》中一個名為DotA的第三方自定義地圖啟發而誕生，且至今仍不斷定期更新。</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="table2">
+            
+            <td class="goleft" id="game2">
+              <div class="games-container" id="game2-container">
+                <div class="game">
+                  <img src="game2.jpg" alt="Game 2">
+                  <h3>Apex Legends</h3>
+                  <p>《Apex 英雄》適用經典的大逃殺遊戲規則，但加入了英雄射擊，由三名玩家組成的小隊使用具有獨特能力的角色，稱為英雄。遊戲背景設定在《泰坦降臨2》的18年以後（約2715－2734年）。遊戲中並不會出現泰坦，但包含了很多《泰坦降臨系列》的元素、特徵和彩蛋。 Sed ut erat a nisi efficitur auctor. </p>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="container2">
+                <select class="dropdown2-2" onchange="selectGroup2(this.value)">
+                  <option value="0">角色介紹</option>
+                  <option value="1">槍枝簡介</option>
+                  <option value="2">地圖介紹</option>
+                </select>
+                  <img class="image2" src="">
+                  <p class="intro-text2"></p>
+                </div>
+                <button class="button previous-button2" onclick="previousContent2()">上一張</button>
+                <button class="button pause-button2" onclick="togglePause2()">暫停</button>
+                <button class="button next-button2" onclick="nextContent2()">下一張</button>
+              </div>
+            </td>
+          </tr>
+  
+          <tr class="table1">
+            <td colspan="2"><h2 id="player1">Favorite NBA Players</h2></td>
+          </tr>
+          <tr class="table2">
+            <td class="goleft">
+              <div class="container3">
+                <select class="dropdown2-3" onchange="selectGroup3(this.value)">
+                  <option value="0">精彩鏡頭</option>
+                  <option value="1">周邊</option>
+                </select>
+                  <img class="image3" src="" alt="">
+                  <p class="intro-text3"></p>
+                </div>
+                <button class="button previous-button3" onclick="previousContent3()">上一張</button>
+                <button class="button pause-button3" onclick="togglePause3()">暫停</button>
+                <button class="button next-button3" onclick="nextContent3()">下一張</button>
+              </div>
+            </td>
+            <td>
+              <div class="players-container">
+                <div class="player">
+                  <img src="player1.jpg" alt="Player 1">
+                  <h3>Kevin Durant</h3>
+                  <p> 凱文·杜蘭特，出生於美國華盛頓特區，現役美國職業籃球運動員，現效力於NBA聯盟鳳凰城太陽，場上位置為小前鋒。 杜蘭特在2007年NBA選秀首輪以第二順位被西雅圖超音速選中，榮薦年度最佳新秀。2009-10年賽季，21歲的杜蘭特成為NBA史上最年輕的得分王。2013-14年賽季成為NBA MVP。</p>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr class="table2" id="player2">
+            <td class="goleft">
+              <div></div>
+              <div class="players-container">
+                <div class="player">
+                  <img src="player2.jpg" alt="Player 2">
+                  <h3>Stephen Curry</h3>
+                  <p>史蒂芬·柯瑞是美國職業籃球運動員，場上位置為控球後衛，現效力於NBA金州勇士。 柯瑞於2009年NBA選秀會中以首輪第7順位加入金州勇士，在2015、2016年兩度獲選年度MVP，也是NBA史上首位全票通過的年度MVP。其職業生涯6度率領金州勇士進入總決賽，率隊奪下4次總冠軍。</p>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="container4">
+                <select class="dropdown2-4" onchange="selectGroup4(this.value)">
+                  <option value="0">精彩鏡頭</option>
+                  <option value="1">周邊</option>
+                </select>
+                  <img class="image4" src="" alt="">
+                  <p class="intro-text4"></p>
+                </div>
+                <button class="button previous-button4" onclick="previousContent4()">上一張</button>
+                <button class="button pause-button4" onclick="togglePause4()">暫停</button>
+                <button class="button next-button4" onclick="nextContent4()">下一張</button>
+              </div>
+            </td>
+          </tr>
+          <tr class="table1">
+            <td colspan="2"><h2 id="song1">Favorite Songs</h2></td>
+          </tr>
+          <tr class="table2 smalltd">
+            <td>
+              <div class="song">
+                <iframe width="560" height="315" src="https://youtu.be/FLUP5Wa2QHo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                <h3>【木偶人 Puppet】</h3>
+                <p>歌手: 薛之謙 Joker Xue</p>
+                <a href="https://mojim.com/twy105713x31x1.htm">歌詞</a>
+              </div>
+            </td>
+          </tr>
+          <tr class="table2 smalltd">
+            <td></td>
+            <td>
+              <div class="song" id="song2">
+                <iframe width="560" height="315" src="https://youtu.be/9EQu7lWaPRg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3>【一個人還是想著一個人】</h3>
+                <p>歌手: 曾沛慈 Pets Tseng</p>
+                <a href="https://mojim.com/twy107683x2x13.htm">歌詞</a>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </main>
+  <a href="#" onclick="redirectToMyWebsite()" class="link">返回首頁</a>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-content">
+        <h2>About</h2>
+        <p>如果你想了解更多關於我的資訊，請聯繫我！</p>
+      </div>
+      
+      <div class="footer-content">
+        <h2>Contact</h2>
+        <p>Email: jasonhung@gamil.com</p>
+        <p>Phone: 0912523652</p>
+      </div>
+      
+      <div class="footer-content">
+        <h2>Follow</h2>
+        <ul class="social-media">
+          <li><a href="https://www.facebook.com/profile.php?id=100002839379120" target="_blank"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="https://discord.gg/x2N58RN9" target="_blank"><i class="fab fa-discord"></i></a></li>
+          <li><a href="https://www.instagram.com/jason911025123/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2023 Jason Hung. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="test1.js"></script>
+</body>
+</html>
